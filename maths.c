@@ -14,6 +14,11 @@ int subtract(int x, int y)
 		return y - x;
 }
 
+int multiply(int x, int y)
+{
+	return x * y;
+}
+
 int main()
 {
 	int x = 4;
@@ -21,4 +26,5 @@ int main()
 	
 	printf("Add Function = %i\n", add(x, y));
 	printf("Subtract Function = %i\n", subtract(x, y));
+	printf("Multiply Function = %i\n", multiply(x, y));
 }
