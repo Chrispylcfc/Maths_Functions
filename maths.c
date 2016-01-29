@@ -24,7 +24,7 @@ int division(int x, int y)
 	return y / x;
 }
 
-int my_remainder(int x, int y)
+int remainder(int x, int y)
 {
 	return x % y;
 }
@@ -53,6 +53,8 @@ int main()
 {
 	int x = 4;
 	int y = 20;
+
+	printf("Numbers are: %i & %i\n", x, y);
 	
 	printf("Add Function = %i\n", add(x, y));
 	printf("Subtract Function = %i\n", subtract(x, y));
@@ -60,6 +62,7 @@ int main()
 	printf("Division Function = %i\n", division(x, y));
 
 	printf("Average Function = %.2f\n", average());
+
 	printf("Remainder Function = %i\n", my_remainder(x, y));
 
 	printf("Program Ended!!\n")
