@@ -53,6 +53,8 @@ int main()
 {
 	int x = 4;
 	int y = 20;
+
+	printf("Numbers are: %i & %i\n", x, y);
 	
 	printf("Add Function = %i\n", add(x, y));
 	printf("Subtract Function = %i\n", subtract(x, y));
