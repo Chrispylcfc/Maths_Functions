@@ -24,6 +24,11 @@ int division(int x, int y)
 	return y / x;
 }
 
+int remainder(int x, int y)
+{
+	return x % y;
+}
+
 float average()
 {
 	int i, n;
@@ -55,6 +60,7 @@ int main()
 	printf("Division Function = %i\n", division(x, y));
 
 	printf("Average Function = %.2f\n", average());
+	printf("Remainder Function = %i\n", remainder(x, y));
 
 	return 0;
 }
