@@ -49,6 +49,36 @@ float average()
 	return average;
 }
 
+int max_min()
+{
+	int i;
+	int max = 0;
+	int min;
+	int num[4];
+	for(i=0; i < 5; i++)
+	{
+		printf("Enter Number: ");
+		scanf("%f", &num[i]);
+	}
+
+	for(i=0; i < 5; i++)
+	{
+		if(num[i] >= max)
+			max = num[i];
+	}
+		
+	min = max;	
+	for(i=0; i < 5; i++)
+	{
+		if(num[i] <= min)
+			min = num[i];
+	}
+
+	return max, min;
+
+	
+}
+
 int main()
 {
 	int x = 4;
@@ -63,6 +93,7 @@ int main()
 
 	printf("Average Function = %.2f\n", average());
 	printf("Remainder Function = %i\n", remainder(x, y));
+	printf("Max_Min Function = %i | %i", max_min());
 
 	return 0;
 }
